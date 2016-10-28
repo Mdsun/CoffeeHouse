@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLime"
+    android:orientation="vertical"
+    tools:context="com.example.sun.coffeehouse.Quantity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteGreen"
+            android:src="@drawable/coffeeimg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Black Coffee"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhiteGreen"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="40/-"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text=" QuantityofCoffee"
+                android:textSize="20sp" />
+
+
+            <Button
+                android:id="@+id/Add"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorLightGreen"
+                android:onClick="increment"
+                android:text="Add"
+                android:textColor="@color/colorWhiteGreen"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/Delete"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorLightGreen"
+                android:onClick="decrement"
+                android:text="Delete"
+                android:textColor="@color/colorWhiteGreen"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Quntity_of_coffee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorRed"
+                android:onClick="TotalPrice"
+                android:text="Total Price"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhiteGreen"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/Price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="20dp"
+                android:text="Tk 0"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Order Online:-"
+            android:textColor="@color/colorOreng"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo2" />
+
+    </LinearLayout>
+
+</LinearLayout>
